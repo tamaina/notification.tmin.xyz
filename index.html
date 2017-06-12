@@ -13,10 +13,22 @@
         subscribe:"auto"
       });
     </script>
+    <style>
+      body,html{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+      }
+    </style>
   </head>
   <body>
-    <h1>NOTIFICATION POWERED BY PUSH7</h1>
-    <p><a href="https://push7.jp/">https://push7.jp/</a></p>
-    <p>VERSION: 0.0.4</p>
+    <h1>NOTIFICATION TEST</h1>
+    <p>GITHUB <a href="https://github.com/tamaina/notification.tmin.xyz">tamaina/notification.tmin.xyz</a></p>
+    <p>POWERED BY <a href="https://push7.jp/">push7</a></p>
+    <p>VERSION: 0.0.5</p>
+    <h2>つかい方</h2>
+    <ol>
+      <li>Push7に登録する</li>
+      <li>ForkしてGithub Pagesを設定、自分のサブドメイン(Cloud Flareなどで、SSL適用)を充てがう。もしくは、自分のWebサーバーにアップロード(ルートドメインorサブドメインで、SSL適用)する。</li>
+      <li>index.htmlの<code>p7.init("～")</code>を自分のAPIキーに設定する</li>
+    </ol>
   </body>
 </html>
