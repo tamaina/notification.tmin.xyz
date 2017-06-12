@@ -3,7 +3,7 @@ var cachepages = [
     "/index",
     "/index.html"
 ];
-var version = '0.0.2';
+var version = '0.0.3';
 this.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(version).then(function(cache) {
