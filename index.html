@@ -15,7 +15,7 @@
     </script>
     <style>
       body,html{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        font-family: sans-serif
       }
     </style>
   </head>
@@ -23,12 +23,18 @@
     <h1>NOTIFICATION TEST</h1>
     <p>GITHUB <a href="https://github.com/tamaina/notification.tmin.xyz">tamaina/notification.tmin.xyz</a></p>
     <p>POWERED BY <a href="https://push7.jp/">push7</a></p>
-    <p>VERSION: 0.0.5</p>
+    <p>VERSION: 0.0.6</p>
     <h2>つかい方</h2>
+    <p>Service Workerの適切なキャッシュ操作ができます(ブラウザがmyWorker.jsを読むことで行われます)。「バージョンを上げる」と、適宜バックグラウンドで更新してくれます(通知が来ます)。</p>
     <ol>
       <li>Push7に登録する</li>
-      <li>ForkしてGithub Pagesを設定、自分のサブドメイン(Cloud Flareなどで、SSL適用)を充てがう。もしくは、自分のWebサーバーにアップロード(ルートドメインorサブドメインで、SSL適用)する。</li>
+      <li>ForkしてGithub Pagesを設定、自分のサブドメイン(Cloud Flareなどで、SSL適用)を充てがう。もしくは、自分のWebサーバーにアップロード(ルートドメインorサブドメインで、SSL適用)する。
+        <ul><li>とりあえず、自分のドメインを持っていない人は、30円くらいでxyzドメインを買うこと。あとは、localhostならいける。</li></ul>
+      </li>
       <li>index.htmlの<code>p7.init("～")</code>を自分のAPIキーに設定する</li>
+      <li>画像、タイトル、manifest.jsonを適宜自分仕様にする。</li>
+      <li>index.html(26行目あたり), push7-worker.js(3行目), myWorker.js(6行目)のバージョンを上げる</li>
+      <li>AndroidのChromeで読み込むと、ホーム画面に追加しますか？の旨のメッセージが出て来る。</li>
     </ol>
   </body>
 </html>
