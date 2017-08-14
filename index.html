@@ -23,19 +23,23 @@
     <h1>NOTIFICATION TEST</h1>
     <p>GITHUB <a href="https://github.com/tamaina/notification.tmin.xyz">tamaina/notification.tmin.xyz</a></p>
     <p>POWERED BY <a href="https://push7.jp/">push7</a></p>
-    <p>VERSION: 0.0.6</p>
+    <p>VERSION: 0.0.7</p>
     <h2>つかい方</h2>
     <p>Service Workerの適切なキャッシュ操作ができます(ブラウザがmyWorker.jsを読むことで行われます)。「バージョンを上げる」と、適宜バックグラウンドで更新してくれます(通知が来ます)。</p>
     <ol>
       <li>Push7に登録する</li>
       <li>ForkしてGithub Pagesを設定、自分のサブドメイン(Cloud Flareなどで、SSL適用)を充てがう。もしくは、自分のWebサーバーにアップロード(ルートドメインorサブドメインで、SSL適用)する。
-        <ul><li>とりあえず、自分のドメインを持っていない人は、30円くらいでxyzドメインを買うこと。あとは、localhostならいける。</li></ul>
+        <ul><li>とりあえず、自分のドメインを持っていない人は、30円くらいでxyzドメインを買える。あとは、localhostならいける。</li></ul>
       </li>
       <li>index.htmlの<code>p7.init("～")</code>を自分のAPIキーに設定する</li>
       <li>画像、タイトル、manifest.jsonを適宜自分仕様にする。</li>
       <li>index.html(26行目あたり), push7-worker.js(3行目), myWorker.js(6行目)のバージョンを上げる</li>
       <li>AndroidのChromeで読み込むと、ホーム画面に追加しますか？の旨のメッセージが出て来る。</li>
     </ol>
-    <div class="p7button" data-align="top" data-button-text="購読する"></div>
+    <hr>
+    <footer>
+      <p><a href="http://qiita.com/aqz/items/c21408257a28c3fc287d">http://qiita.com/aqz/items/c21408257a28c3fc287d</a></p>
+      <div class="p7button" data-align="top" data-button-text="購読する"></div>
+    </footer>
   </body>
 </html>
