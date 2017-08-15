@@ -6,8 +6,9 @@
     {"src": "test600.png", "sizes": "600x600", "type": "image/png"}
     ],
   "display": "standalone",
-  "start_url": "./",
+  "start_url": "/",
   "background_color": "#1c1670",
+  "theme_color": "#473aff",
   "gcm_sender_id": "781205625909",
   "gcm_user_visible_only": true
 }
