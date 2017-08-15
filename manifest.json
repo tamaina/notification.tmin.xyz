@@ -1,6 +1,6 @@
 {
   "name": "TMIN NOTIFICATION",
-  "short_name": "PAWテスト",
+  "short_name": "PWA Test",
   "icons": [
     {"src": "test144.png", "sizes": "144x144", "type": "image/png"},
     {"src": "test600.png", "sizes": "600x600", "type": "image/png"}

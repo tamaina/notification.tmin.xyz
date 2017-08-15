@@ -5,7 +5,7 @@ var cachepages = [
     "/index",
     "/index.html"
 ];
-var version = '0.0.9';
+var version = '0.0.10';
 this.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(version).then(function(cache) {
