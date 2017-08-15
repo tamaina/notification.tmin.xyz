@@ -1,12 +1,14 @@
 {
   "name": "TMIN NOTIFICATION",
-  "short_name": "TMIN NOTIFICATION",
+  "short_name": "PAWテスト",
   "icons": [
     {"src": "test144.png", "sizes": "144x144", "type": "image/png"},
     {"src": "test600.png", "sizes": "600x600", "type": "image/png"}
     ],
   "display": "standalone",
   "start_url": "/",
+  "background_color": "#1c1670",
+  "theme_color": "#473aff",
   "gcm_sender_id": "781205625909",
   "gcm_user_visible_only": true
 }
